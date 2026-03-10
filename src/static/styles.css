@@ -70,8 +70,44 @@ section h3 {
   color: #0066cc;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
+.activity-card .participants-list {
+  margin-top: 10px;
+}
+
+.activity-card .participant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.activity-card .participant:last-child {
+  border-bottom: none;
+}
+
+.activity-card .participant span {
+  font-size: 14px;
+  color: #555;
+}
+
+.activity-card .delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.activity-card .delete-btn:hover {
+  background-color: #c82333;
 }
 
 .form-group {
